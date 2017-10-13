@@ -5,9 +5,8 @@ This tutorial is aimed for anyone who wants to learn how to build an iOS Applica
 
 #### Necessary Equipment:
 - Mac Computer with Xcode installed
-    + Xcode can be found in the Mac App store.
++ Xcode can be found in the Mac App store.
 - Internet Connection   
-- Basic skills on how to user a computer (i.e. how to use a mouse / keyboard)
 
 ### Step 1: Creating a new Project and Getting familiar with Xcode
 In this section you will create the Xcode project and get yourself familiar with the development environment.
@@ -15,20 +14,20 @@ In this section you will create the Xcode project and get yourself familiar with
 1. Open Xcode<br /><br />
 2. Select "Create a new Xcode Project" <br /><br />
 <img src="https://raw.githubusercontent.com/fnk0/iOS-Calculator-Tutorial/master/Calculator/images/fig1.png" alt="Figure 1" style="width: 600px;"/> <br />
-_Figure 1_ <br /><br /><br /><br /><br /><br /><br />
+_Figure 1_ <br /><br />
 3. Select "Single View Application" and click "Next" <br /><br />
 <img src="https://raw.githubusercontent.com/fnk0/iOS-Calculator-Tutorial/master/Calculator/images/fig2.png" alt="Figure 2" style="width: 600px;"/> <br />
 _Figure 2_ <br /><br />
 4. Give the App (i.e. Product Name) a name and a organization identifier. <br />
-**Note:** _The organization is usually a company's domain name in reverse, but for our purposes we will justbe using **com.last name**. In my case it will be **com.gabilheri**_ <br /><br />
-5. Select the language to be Swift<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+**Note:** _The organization is usually a company's domain name in reverse, but for our purposes we will justbe using **com.name**. In my case it will be **com.yongyang**_ <br /><br />
+5. Select the language to be Swift<br /><br /><br />
 6. Select iPhone in the devices Dropdown. You should now have something similar to Figure 3. <br /><br />
 <img src="https://raw.githubusercontent.com/fnk0/iOS-Calculator-Tutorial/master/Calculator/images/fig3.png" alt="Figure 3" style="width: 600px;"/> <br />
 _Figure 3_ <br /><br /><br />
 7. Click **next** to select where to save and then **create** to create the project. Depending on the speed of your computer this might take a couple of minutes.
 <br /><br />
 8. After the project has been created, Xcode will open the project and you should see something like Figure 4. <br /><br />
-<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br />
 <img src="https://raw.githubusercontent.com/fnk0/iOS-Calculator-Tutorial/master/Calculator/images/fig4.png" alt="Figure 4" style="width: 600px;"/> <br />
 _Figure 4_ <br /><br />
 9. In the second section of that screen where it says "Deployment Info" uncheck the boxes that says "Landscape Left" and "Landscape Right". We only want to support portrait orientantion in this calculator. See figure 5.
@@ -37,7 +36,7 @@ _Figure 5_ <br /><br />
 
 10. Now let's proceed to build the user interface for our calculator. On the **Navigator Area** select the file ```Main.storyboard```
 
-<br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br />
 
 ### Step 2: Building the User Interface
 In this step we will be adding the buttons and the placeholder text for our calculator app. <br />
@@ -48,24 +47,24 @@ _Figure 6_ <br /><br />
 I know that XCode might look intimidating at first glance. So let's take a second to understand what each section of the program does:
 
 - Navigator Area
-    + A tree view of the files in your project. The .swift files is where our code will live. The .storyboard file is where the user interface for our app will be located.
++ A tree view of the files in your project. The .swift files is where our code will live. The .storyboard file is where the user interface for our app will be located.
 - Outline View
-    + The ouline view will show an outline and a hierarchy of the user interface in the storyboard.
++ The ouline view will show an outline and a hierarchy of the user interface in the storyboard.
 - Toolbar
-    + The buttons on the right are used to hide or show different sections of Xcode. 
-    + The buttons on the left are used to "Run" or stop the application. You can also select which device you want to run the app on. For the purposes of this tutorial we will only be using the iPhone 6.
-    + The central area of the toolbar will display information about the current status of the project and progress bar for any ongoing operation by Xcode.
++ The buttons on the right are used to hide or show different sections of Xcode. 
++ The buttons on the left are used to "Run" or stop the application. You can also select which device you want to run the app on. For the purposes of this tutorial we will only be using the iPhone 6.
++ The central area of the toolbar will display information about the current status of the project and progress bar for any ongoing operation by Xcode.
 - Canvas Area
-    + The canvas area in the .storyboard files represents the area on which we will build the user interface for our applications
-    + For the .swift files the canvas will be replaced with a text editor where we will write the code for the app.
++ The canvas area in the .storyboard files represents the area on which we will build the user interface for our applications
++ For the .swift files the canvas will be replaced with a text editor where we will write the code for the app.
 - Attribute Selector
-    + The attributes selector allow us to navigate in between diferent properties of our user interface application
++ The attributes selector allow us to navigate in between diferent properties of our user interface application
 <br /><br /><br /><br /><br /><br />
 - Attributes Area
-    + Displays the attributes for the current selected attribute selector.
-    + Atrributes can vary depending on the object selected in the canvas.
++ Displays the attributes for the current selected attribute selector.
++ Atrributes can vary depending on the object selected in the canvas.
 - Object Library
-    + The object library is where we will select the different components to build the user interface.
++ The object library is where we will select the different components to build the user interface.
 
 1. In the attribute selector click on the leftmost icon. The icon looks like a file<br /><br />
 2. In the attributes area unchek the box that says _"Use size classes"_.<br /><br />
@@ -79,14 +78,14 @@ _Figure 7_ <br /><br /><br />
 7. In the object selector find the ```Label``` component and drag into the canvas.<br /><br />
 8. Resize the label to occupy the full width of the screen, but leaving a small margin on the sides. Xcode should display some guiding margins when you get close to the edge of the screen.<br /><br />
 9. On the attributes selector click on 4th icon from left to right. <br /><br /><br />
-10. On the attributes area aligh the text of the label to be right. You should now have something similar to Figure 8. <br /><br /><br /><br /><br />
+10. On the attributes area aligh the text of the label to be right. You should now have something similar to Figure 8. <br /><br /><br />
 11. Increase the font size of the label to 22. Feel free to explore the Attributes panel and change anything else, such as font, color, etc. 
 <br />
 <img src="https://raw.githubusercontent.com/fnk0/iOS-Calculator-Tutorial/master/Calculator/images/fig8.png" alt="Figure 8" style="width: 600px;"/> <br />
 _Figure 8_ <br /><br />
 12. From the object library drag 16 buttons to the canvas.<br /><br />
 13. Arrange the buttons into 4 rows of 4 buttons each.<br /><br />
-<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 14. Double click on each button to change it's text and change the text inside a button to mirror a calculator layout. You should now have something similar to Figure 9. 
 <br />
 <img src="https://raw.githubusercontent.com/fnk0/iOS-Calculator-Tutorial/master/Calculator/images/fig9.png" alt="Figure 9" style="width: 600px;"/> <br />
@@ -135,8 +134,8 @@ _Figure 14_ <br /><br />
 
 ```swift
 override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
+super.didReceiveMemoryWarning()
+// Dispose of any resources that can be recreated.
 }
 // Here is where we will drag
 ```
@@ -146,9 +145,10 @@ _Figure 15_ <br /><br />
 
 6. After you release the mouse you should get a pop-up window with different options. Make it look like figure 16. <br />
 <img src="https://raw.githubusercontent.com/fnk0/iOS-Calculator-Tutorial/master/Calculator/images/fig16.png" alt="Figure 16" style="width: 600px;"/> <br />
-_Figure 16_ <br /><br /><br /><br /><br /><br />
+_Figure 16_ <br /><br />
 
 7. You should now see a new function in your code that says:
+
 ```swift
 @IBAction func handleButtonPress(sender: UIButton) {
 }
@@ -180,95 +180,34 @@ var hasOp = false
 var canClear = true
 ```
 <br />
-11. Now below the method says ```handleButtonpress(sender: UIButton) ``` add the following code:
+11. Now below the method says ```handleButtonpress(sender: UIButton) ``` 
+add the following code:
+
 ```swift
 func calculate() -> Double {
-    let firstNumber = Double(firstNumberText)!
-    let secondNumber = Double(secondNumberText)!
-    firstNumberText = ""
-    secondNumberText = ""
-    switch op {
-    case "+":
-        return firstNumber + secondNumber
-    case "-":
-        return firstNumber - secondNumber
-    case "*":
-        return firstNumber * secondNumber
-    case "/":
-        return firstNumber / secondNumber
-    default:
-        return 0
-    }
+	let firstNumber = Double(firstNumberText)!
+	let secondNumber = Double(secondNumberText)!
+	firstNumberText = ""
+	secondNumberText = ""
+	switch op {
+	case "+":
+		return firstNumber + secondNumber
+	case "-":
+		return firstNumber - secondNumber
+	case "*":
+		return firstNumber * secondNumber
+	case "/":
+		return firstNumber / secondNumber
+	default:
+		return 0
+}
 ```
 
 This function is the one we will use to calculate the result of the operations.
 <br /><br />
 12. Now lets add the code to deal what happens when a button is pressed. Inside the ```handleButtonpress(sender: UIButton) ``` add the following code:
-```swift
-@IBAction func handleButtonPress(sender: UIButton) {
-    if canClear {
-        resultLabel.text = ""
-        canClear = false
-    }
-    let currentText = resultLabel.text!
-    let textLabel = sender.titleLabel?.text
-    if let text = textLabel {
-        switch text {
-        case "+", "*", "/", "-":
-            if hasOp {
-                return
-            }
-            op = text
-            isFirstNumber = false
-            hasOp = true
-            resultLabel.text = "\(currentText) \(op) "
-            break
-        case "=":
-            isFirstNumber = true
-            hasOp = false
-            canClear = true
-            let result = calculate()
-            resultLabel.text = "\(result)"
-            break
-        default:
-            if isFirstNumber {
-                firstNumberText = "\(firstNumberText)\(text)"
-            } else {
-                secondNumberText = "\(secondNumberText)\(text)"
-            }
-            resultLabel.text = "\(currentText)\(text)"
-            break;
-        }
-    }
-}
-```
-<br />
-Your code should look something like this:
-```swift
-import UIKit
 
-class ViewController: UIViewController {
-    
-    @IBOutlet weak var resultLabel: UILabel!
-    
-    var firstNumberText = ""
-    var secondNumberText = ""
-    var op = ""
-    var isFirstNumber = true
-    var hasOp = false
-    var canClear = true
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-     
+```swift
     @IBAction func handleButtonPress(sender: UIButton) {
         if canClear {
             resultLabel.text = ""
@@ -305,7 +244,71 @@ class ViewController: UIViewController {
             }
         }
     }
+```
 
+Your code should look something like this:
+
+
+```swift
+import UIKit
+
+class ViewController: UIViewController {
+    
+    @IBOutlet weak var resultLabel: UILabel!
+    
+    var firstNumberText = ""
+    var secondNumberText = ""
+    var op = ""
+    var isFirstNumber = true
+    var hasOp = false
+    var canClear = true
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func handleButtonPress(sender: UIButton) {
+        if canClear {
+            resultLabel.text = ""
+            canClear = false
+        }
+        let currentText = resultLabel.text!
+        let textLabel = sender.titleLabel?.text
+        if let text = textLabel {
+            switch text {
+            case "+", "*", "/", "-":
+                if hasOp {
+                    return
+                }
+                op = text
+                isFirstNumber = false
+                hasOp = true
+                resultLabel.text = "\(currentText) \(op) "
+                break
+            case "=":
+                isFirstNumber = true
+                hasOp = false
+                canClear = true
+                let result = calculate()
+                resultLabel.text = "\(result)"
+                break
+            default:
+                if isFirstNumber {
+                    firstNumberText = "\(firstNumberText)\(text)"
+                } else {
+                    secondNumberText = "\(secondNumberText)\(text)"
+                }
+                resultLabel.text = "\(currentText)\(text)"
+                break;
+            }
+        }
+    }
     
     func calculate() -> Double {
         let firstNumber = Double(firstNumberText)!
@@ -344,17 +347,8 @@ An excelent place to find more iOS tutorials is [Ray Wanderlich](http://www.rayw
 ### Troubleshooting:
 
 - The buttons and label have a different size on the screen when I run the emulator?
-    + Option 1: Make sure that in the Attributes area you have specified your storyboard to be iPhone 4.7"
-    + Option 2: You are using a Simulator for the iPhone 6+ or for the iPhone 5. In the toolbar next to the **Play** button make sure to select iPhone 6 or iPhone 6s.
++ Option 1: Make sure that in the Attributes area you have specified your storyboard to be iPhone 4.7"
++ Option 2: You are using a Simulator for the iPhone 6+ or for the iPhone 5. In the toolbar next to the **Play** button make sure to select iPhone 6 or iPhone 6s.
 - When I press a specific button nothing happens.
-    + Make sure to connect the function ```func handleButtonPress(sender: UIButton)``` to the button in the .storyboard file by dragging from the circle in the left side of the function.
-
-
-
-
-
-
-
-
-
++ Make sure to connect the function ```func handleButtonPress(sender: UIButton)``` to the button in the .storyboard file by dragging from the circle in the left side of the function.
 
